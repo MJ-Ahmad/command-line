@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Cheat Sheet - MJ Command</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">MJ Command</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">gh</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../" class="dropdown-item">Git</a>
+</li>
+                                    
+<li>
+    <a href="../commands/" class="dropdown-item">Git commands</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Cheat Sheet</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">CLI</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../cli/" class="dropdown-item">MJ Command</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../commands/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../cli/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#mj-command-line-documentation-hub" class="nav-link">MJ Command-Line — Documentation Hub</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#top-10-daily-commands" class="nav-link">🔑 Top 10 Daily Commands</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#daily-workflow" class="nav-link">📈 Daily Workflow</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#undo-restore-workflow" class="nav-link">🛠 Undo &amp; Restore Workflow</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#collaboration-workflow" class="nav-link">🌍 Collaboration Workflow</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="mj-command-line-documentation-hub">MJ Command-Line — Documentation Hub</h1>
+<p><strong>Maintained by</strong>: Sovereign Architect (MJ Ahmad)<br />
+<strong>Purpose</strong>: To provide a step-by-step guide for deploying MJ smart contracts to Mainnet or Testnet environments</p>
+<hr />
+<p><code>Git Cheat Sheet</code></p>
+<h2 id="top-10-daily-commands">🔑 Top 10 Daily Commands</h2>
+<pre><code class="language-mermaid">1. `git init` — start a new repository  
+2. `git clone &lt;url&gt;` — copy an existing repository  
+3. `git add &lt;file&gt;` or `git add .` — stage changes  
+4. `git commit -m &quot;message&quot;` — save changes with a message  
+5. `git switch &lt;branch&gt;` — move between branches  
+6. `git switch -c &lt;branch&gt;` — create a new branch  
+7. `git log --oneline` — view compact commit history  
+8. `git diff` — compare changes before committing  
+9. `git push origin main` — send commits to remote  
+10. `git pull` — fetch and merge changes from remote  
+</code></pre>
+<hr />
+<h2 id="daily-workflow">📈 Daily Workflow</h2>
+<pre><code class="language-mermaid">flowchart TD
+    A[git init / git clone] --&gt; B[git add &lt;file&gt;]
+    B --&gt; C[git commit -m &quot;message&quot;]
+    C --&gt; D{Branching}
+    D --&gt;|Create| E[git switch -c &lt;branch&gt;]
+    D --&gt;|Switch| F[git switch &lt;branch&gt;]
+    E --&gt; G[git diff / git log --oneline]
+    F --&gt; G
+    G --&gt; H[git push origin main]
+    H --&gt; I[git pull]
+</code></pre>
+<hr />
+<h2 id="undo-restore-workflow">🛠 Undo &amp; Restore Workflow</h2>
+<pre><code class="language-mermaid">flowchart TD
+    A[Working Directory] --&gt; B{Need to undo?}
+    B --&gt;|Discard file changes| C[git restore &lt;file&gt;]
+    B --&gt;|Discard everything| D[git reset --hard]
+    B --&gt;|Save for later| E[git stash]
+    B --&gt;|Fix last commit| F[git commit --amend]
+    B --&gt;|Rewind history| G[git reset &lt;commit&gt;]
+    B --&gt;|Pick specific commit| H[git cherry-pick &lt;commit&gt;]
+</code></pre>
+<hr />
+<h2 id="collaboration-workflow">🌍 Collaboration Workflow</h2>
+<pre><code class="language-mermaid">flowchart TD
+    A[Local Repo] --&gt; B[git remote add &lt;name&gt; &lt;url&gt;]
+    B --&gt; C[git fetch]
+    C --&gt; D{Need to integrate?}
+    D --&gt;|Merge| E[git merge origin/main]
+    D --&gt;|Rebase| F[git rebase origin/main]
+    E --&gt; G[git push origin main]
+    F --&gt; G
+    G --&gt; H[git pull]
+</code></pre>
+<hr />
+<h3 id="how-to-use">✅ How to Use</h3>
+<ul>
+<li>Place this file in your <code>docs/gh/</code> folder (e.g., <code>docs/gh/cheatsheet.md</code>).</li>
+<li>Add it to your <code>mkdocs.yml</code> navigation under <code>gh</code>.</li>
+<li>Enable <strong>Mermaid diagrams</strong> with <code>pymdownx.superfences</code> in your <code>mkdocs.yml</code>.</li>
+</ul>
+<hr />
+<p>This page now gives a <strong>one-stop Git reference</strong>: the most-used commands, plus visual workflows for daily use, undoing mistakes, and collaborating with remotes.  </p>
+<p>Next, prepare a <strong>matching <code>.yml</code> nav entry</strong> so this cheat sheet appears neatly under <code>gh</code> section in MKDocs</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

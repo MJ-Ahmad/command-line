@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>MJ Command - MJ Command</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">MJ Command</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">gh</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../gh/" class="dropdown-item">Git</a>
+</li>
+                                    
+<li>
+    <a href="../gh/commands/" class="dropdown-item">Git commands</a>
+</li>
+                                    
+<li>
+    <a href="../gh/cheatsheet/" class="dropdown-item">Cheat Sheet</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">CLI</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">MJ Command</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../gh/cheatsheet/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#mj-command-line-documentation-hub" class="nav-link">MJ Command-Line — Documentation Hub</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#git" class="nav-link">Git</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#mkdocs" class="nav-link">mkdocs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#python-cli" class="nav-link">Python CLI</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#net-cli" class="nav-link">.NET CLI</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#mlnet-cli" class="nav-link">ML.NET CLI</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#powershell-ps" class="nav-link">PowerShell (PS)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#learn-more" class="nav-link">📚 Learn More</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="mj-command-line-documentation-hub">MJ Command-Line — Documentation Hub</h1>
+<p><strong>Maintained by</strong>: Sovereign Architect (MJ Ahmad)<br />
+<strong>Purpose</strong>: To provide a step-by-step guide for deploying MJ smart contracts to Mainnet or Testnet environments</p>
+<hr />
+<h2 id="git">Git</h2>
+<ol>
+<li>
+<p><strong>Initialize a repo</strong><br />
+<code>git init</code> — start a new repository.</p>
+</li>
+<li>
+<p><strong>Clone a repo</strong><br />
+<code>git clone &lt;url&gt;</code> — copy an existing repository.</p>
+</li>
+<li>
+<p><strong>Stage changes</strong><br />
+<code>git add &lt;file&gt;</code> or <code>git add .</code> — prepare files for commit.</p>
+</li>
+<li>
+<p><strong>Commit changes</strong><br />
+<code>git commit -m "message"</code> — save changes with a message.</p>
+</li>
+<li>
+<p><strong>Switch branches</strong><br />
+<code>git switch &lt;branch&gt;</code> — move between branches.</p>
+</li>
+<li>
+<p><strong>Create a branch</strong><br />
+<code>git switch -c &lt;branch&gt;</code> — start a new branch.</p>
+</li>
+<li>
+<p><strong>View history</strong><br />
+<code>git log --oneline</code> — see a compact commit history.</p>
+</li>
+<li>
+<p><strong>Compare changes</strong><br />
+<code>git diff</code> — check differences before committing.</p>
+</li>
+<li>
+<p><strong>Push changes</strong><br />
+<code>git push origin main</code> — send commits to remote.</p>
+</li>
+<li>
+<p><strong>Pull updates</strong><br />
+<code>git pull</code> — fetch and merge changes from remote.</p>
+</li>
+</ol>
+<hr />
+<p><strong>Initialize GitHub repo</strong></p>
+<ol>
+<li><code>git init</code></li>
+<li><code>git add .</code></li>
+<li><code>git commit -m "Initial commit"</code></li>
+<li><code>git branch -M main</code></li>
+<li><code>git remote add origin https://github.com/&lt;your-username&gt;/&lt;repo-name&gt;.git</code></li>
+<li><code>git push -u origin main</code></li>
+</ol>
+<hr />
+<h3 id="main-points">🔑 Main Points</h3>
+<ul>
+<li><strong>Getting Started</strong></li>
+<li>Initialize a repository: <code>git init</code></li>
+<li>
+<p>Clone an existing repository: <code>git clone &lt;url&gt;</code></p>
+</li>
+<li>
+<p><strong>Prepare to Commit</strong></p>
+</li>
+<li>Stage files: <code>git add &lt;file&gt;</code> or <code>git add .</code></li>
+<li>Remove or move files: <code>git rm</code>, <code>git mv</code></li>
+<li>
+<p>Unstage changes: <code>git reset</code></p>
+</li>
+<li>
+<p><strong>Make Commits</strong></p>
+</li>
+<li>Commit with a message: <code>git commit -m "message"</code></li>
+<li>
+<p>Commit staged + tracked changes: <code>git commit -am "message"</code></p>
+</li>
+<li>
+<p><strong>Branching</strong></p>
+</li>
+<li>Switch branches: <code>git switch &lt;branch&gt;</code> or <code>git checkout &lt;branch&gt;</code></li>
+<li>Create new branch: <code>git switch -c &lt;branch&gt;</code></li>
+<li>
+<p>Delete branch: <code>git branch -d &lt;branch&gt;</code> (force with <code>-D</code>)</p>
+</li>
+<li>
+<p><strong>Diff &amp; History</strong></p>
+</li>
+<li>Compare changes: <code>git diff</code></li>
+<li>Show commit details: <code>git show &lt;commit&gt;</code></li>
+<li>View logs: <code>git log</code>, <code>git log --oneline</code></li>
+<li>
+<p>Blame file lines: <code>git blame &lt;file&gt;</code></p>
+</li>
+<li>
+<p><strong>Undo &amp; Restore</strong></p>
+</li>
+<li>Discard changes: <code>git restore &lt;file&gt;</code> or <code>git reset --hard</code></li>
+<li>Stash changes: <code>git stash</code></li>
+<li>
+<p>Amend last commit: <code>git commit --amend</code></p>
+</li>
+<li>
+<p><strong>Merge &amp; Rebase</strong></p>
+</li>
+<li>Merge branches: <code>git merge</code></li>
+<li>Rebase: <code>git rebase</code></li>
+<li>
+<p>Cherry-pick commits: <code>git cherry-pick &lt;commit&gt;</code></p>
+</li>
+<li>
+<p><strong>Remote Operations</strong></p>
+</li>
+<li>Add remote: <code>git remote add &lt;name&gt; &lt;url&gt;</code></li>
+<li>Push changes: <code>git push origin main</code></li>
+<li>
+<p>Pull changes: <code>git pull</code></p>
+</li>
+<li>
+<p><strong>Configuration</strong></p>
+</li>
+<li>Set username/email: <code>git config user.name "Name"</code>, <code>git config user.email "Email"</code></li>
+<li>Global config: <code>git config --global ...</code></li>
+<li>
+<p>Aliases: <code>git config alias.st status</code></p>
+</li>
+<li>
+<p><strong>Important Files</strong></p>
+</li>
+<li>Local config: <code>.git/config</code></li>
+<li>Global config: <code>~/.gitconfig</code></li>
+<li>Ignore list: <code>.gitignore</code>  </li>
+</ul>
+<hr />
+<h3 id="gh"><code>gh</code></h3>
+<hr />
+<h2 id="mkdocs">mkdocs</h2>
+<p><code>Commands &amp; Project Scripts</code></p>
+<h3 id="command"><code>Command</code></h3>
+<p><strong>Install mkdocs</strong></p>
+<p><code>pip install mkdocs</code></p>
+<p><strong>install a theme like Material</strong></p>
+<p><code>pip install mkdocs-material</code></p>
+<p>Create project folder</p>
+<p><code>mkdir learning-project</code></p>
+<p><code>cd learning-project</code></p>
+<p><strong>Initialize mkdocs</strong></p>
+<p><code>mkdocs new .</code> - This will generate mkdocs.yml and a docs/ folder.</p>
+<p><strong>Run local server</strong></p>
+<p><code>mkdocs serve</code> - Visit: <code>http://127.0.0.1:8000</code></p>
+<p><strong>Deploy to GitHub Pages</strong></p>
+<p><code>git init</code></p>
+<p><code>git add .</code></p>
+<p><code>git commit -m "Initial commit"</code></p>
+<p><code>git branch -M main</code></p>
+<p><code>git remote add origin https://github.com/&lt;your-username&gt;/&lt;repo-name&gt;.git</code></p>
+<p><code>git push -u origin main</code></p>
+<p><strong>Deploy with MKDocs:</strong></p>
+<p><code>mkdocs gh-deploy</code></p>
+<p><strong>Workflow Summary</strong></p>
+<p>Write docs → in <code>docs/</code> folder.  </p>
+<p>Preview locally → <code>mkdocs serve</code>.  </p>
+<p>Commit changes → <code>git add . &amp;&amp; git commit -m "update"</code>.  </p>
+<p>Deploy → <code>mkdocs gh-deploy</code>.  </p>
+<hr />
+<h3 id="project-scripts"><code>Project Scripts</code></h3>
+<p>Design a <strong>complete MKDocs project</strong> for “Learning Project” that covers <strong>.NET, ML.NET, Python, Blockchain, etc.</strong> and walk through <strong>setup, build, and deployment to GitHub Pages</strong> step by step.</p>
+<hr />
+<p><strong>Project Structure (Folder Tree)</strong></p>
+<p>Here’s a clean structure you can start with:</p>
+<pre><code>learning-project/
+│
+├── docs/                     # All documentation lives here
+│   ├── index.md              # Home page
+│   ├── dotnet/
+│   │   ├── intro.md
+│   │   ├── tutorials.md
+│   │   └── projects.md
+│   ├── mlnet/
+│   │   ├── intro.md
+│   │   ├── examples.md
+│   │   └── projects.md
+│   ├── python/
+│   │   ├── intro.md
+│   │   ├── venv.md
+│   │   └── projects.md
+│   ├── blockchain/
+│   │   ├── intro.md
+│   │   ├── basics.md
+│   │   └── projects.md
+│   └── about.md
+│
+├── mkdocs.yml                # MKDocs configuration file
+├── requirements.txt          # Python dependencies
+└── README.md                 # Project overview
+</code></pre>
+<hr />
+<p><strong>Step 1: Install MKDocs</strong></p>
+<p>Open <strong>PowerShell 7</strong> (since you were checking that earlier):</p>
+<pre><code class="language-powershell"># Install mkdocs
+pip install mkdocs
+
+# Optional: install a theme like Material
+pip install mkdocs-material
+</code></pre>
+<hr />
+<p><strong>Step 2: Initialize Project</strong></p>
+<pre><code class="language-powershell"># Create project folder
+mkdir learning-project
+cd learning-project
+
+# Initialize mkdocs
+mkdocs new .
+</code></pre>
+<p>This will generate <code>mkdocs.yml</code> and a <code>docs/</code> folder.</p>
+<hr />
+<p><strong>Step 3: Configure mkdocs.yml</strong></p>
+<p>Edit <code>mkdocs.yml</code>:</p>
+<pre><code class="language-yaml">site_name: Learning Project
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - .NET:
+      - Introduction: dotnet/intro.md
+      - Tutorials: dotnet/tutorials.md
+      - Projects: dotnet/projects.md
+  - ML.NET:
+      - Introduction: mlnet/intro.md
+      - Examples: mlnet/examples.md
+      - Projects: mlnet/projects.md
+  - Python:
+      - Introduction: python/intro.md
+      - Virtual Environments: python/venv.md
+      - Projects: python/projects.md
+  - Blockchain:
+      - Introduction: blockchain/intro.md
+      - Basics: blockchain/basics.md
+      - Projects: blockchain/projects.md
+  - About: about.md
+</code></pre>
+<hr />
+<p><strong>Step 4: Build &amp; Preview Locally</strong></p>
+<pre><code class="language-powershell"># Run local server
+mkdocs serve
+</code></pre>
+<p>Visit: <code>http://127.0.0.1:8000</code></p>
+<hr />
+<p><strong>Step 5: Deploy to GitHub Pages</strong></p>
+<ol>
+<li>Initialize GitHub repo:</li>
+</ol>
+<pre><code class="language-powershell">git init
+git add .
+git commit -m &quot;Initial commit&quot;
+git branch -M main
+git remote add origin https://github.com/&lt;your-username&gt;/&lt;repo-name&gt;.git
+git push -u origin main
+</code></pre>
+<ol>
+<li>Deploy with MKDocs:</li>
+</ol>
+<pre><code class="language-powershell">mkdocs gh-deploy
+</code></pre>
+<p>This will build the site and push it to the <code>gh-pages</code> branch automatically.</p>
+<hr />
+<p><strong>Workflow Summary</strong></p>
+<ol>
+<li><strong>Write docs</strong> → in <code>docs/</code> folder.  </li>
+<li><strong>Preview locally</strong> → <code>mkdocs serve</code>.  </li>
+<li><strong>Commit changes</strong> → <code>git add . &amp;&amp; git commit -m "update"</code>.  </li>
+<li><strong>Deploy</strong> → <code>mkdocs gh-deploy</code>.  </li>
+</ol>
+<hr />
+<p>👉 Tip: Since you’re learning multiple technologies, keep each topic modular. For example, add <strong>projects.md</strong> in each section where you document hands-on mini-projects (like a Python script, ML.NET model, or Blockchain demo).</p>
+<p>Would you like me to also <strong>create a ready-to-use mkdocs.yml file</strong> with Material theme and navigation already set up for your topics so you can copy-paste directly?</p>
+<hr />
+<p>👉 These ten cover the <strong>core workflow</strong>: start a repo, make changes, commit, branch, review, and sync with remotes.  </p>
+<p>Next, create a <strong>visual workflow diagram</strong> showing how these commands connect in a typical project cycle</p>
+<hr />
+<p>I see exactly what’s happening, Abdul. The warnings you’re seeing break down into two separate issues:</p>
+<hr />
+<h3 id="1-material-theme-warning">1. ⚠️ Material Theme Warning</h3>
+<ul>
+<li>The <strong>Material for MkDocs team</strong> is warning about <strong>MkDocs 2.0</strong> (still experimental).</li>
+<li>They’re saying it’s <strong>not production-ready</strong> and may break plugins/themes.</li>
+<li><strong>Solution:</strong> Stick with <strong>MkDocs 1.x</strong> for now. You can downgrade safely:</li>
+</ul>
+<pre><code class="language-powershell">pip install &quot;mkdocs&lt;2.0&quot;
+pip install mkdocs-material
+</code></pre>
+<p>That way you’ll avoid instability until MkDocs 2.0 stabilizes.</p>
+<hr />
+<h3 id="2-missing-documentation-files">2. ⚠️ Missing Documentation Files</h3>
+<p>All those <code>WARNING - A reference to 'dotnet/intro.md' ... not found</code> mean your <strong>mkdocs.yml navigation points to files that don’t exist yet</strong>.</p>
+<h3 id="fix">Fix:</h3>
+<p>Create the missing files inside your <code>docs/</code> folder:</p>
+<pre><code class="language-powershell">mkdir docs\dotnet
+mkdir docs\mlnet
+mkdir docs\python
+mkdir docs\blockchain
+
+# Create empty files
+ni docs\dotnet\intro.md
+ni docs\dotnet\tutorials.md
+ni docs\dotnet\projects.md
+
+ni docs\mlnet\intro.md
+ni docs\mlnet\examples.md
+ni docs\mlnet\projects.md
+
+ni docs\python\intro.md
+ni docs\python\venv.md
+ni docs\python\projects.md
+
+ni docs\blockchain\intro.md
+ni docs\blockchain\basics.md
+ni docs\blockchain\projects.md
+
+ni docs\about.md
+</code></pre>
+<p><em>(Here <code>ni</code> = <code>New-Item</code> in PowerShell. You can also just create them manually in VS Code.)</em></p>
+<p>Once those files exist, the warnings will disappear.</p>
+<hr />
+<h3 id="next-steps">✅ Next Steps</h3>
+<ol>
+<li><strong>Downgrade MkDocs</strong> to 1.x for stability.  </li>
+<li><strong>Create the missing files</strong> so your navigation works.  </li>
+<li>Run again:</li>
+</ol>
+<pre><code class="language-powershell">mkdocs serve
+</code></pre>
+<p>Now your site should build cleanly and serve at <code>http://127.0.0.1:8000</code>.</p>
+<hr />
+<p>👉 Tip: You don’t need to fill all those <code>.md</code> files right away. Even empty files will satisfy MkDocs. Later, you can add content gradually for each topic (.NET, ML.NET, Python, Blockchain).</p>
+<p>Would you like me to <strong>generate starter content</strong> (like a template intro for each section) so your pages don’t look blank when you first open them?</p>
+<hr />
+<p>Great, Abdul — since you’ve already downgraded MkDocs to 1.x, let’s automate the creation of all those missing files with a <strong>Python script</strong>. This way, you can just run one <code>.py</code> file and it will generate the folder tree and starter content for each section.</p>
+<hr />
+<h3 id="python-script-create_docs_structurepy">📜 Python Script: <code>create_docs_structure.py</code></h3>
+<p>Save this file in your project root (<code>C:\Dev\learn</code>) and run it with your virtual environment:</p>
+<pre><code class="language-python">import os
+
+# Define the folder structure and files with starter content
+structure = {
+    &quot;dotnet&quot;: {
+        &quot;intro.md&quot;: &quot;# .NET Introduction\nWelcome to the .NET section.&quot;,
+        &quot;tutorials.md&quot;: &quot;# .NET Tutorials\nStep-by-step guides for learning .NET.&quot;,
+        &quot;projects.md&quot;: &quot;# .NET Projects\nDocument your .NET projects here.&quot;
+    },
+    &quot;mlnet&quot;: {
+        &quot;intro.md&quot;: &quot;# ML.NET Introduction\nOverview of ML.NET for machine learning in .NET.&quot;,
+        &quot;examples.md&quot;: &quot;# ML.NET Examples\nCode samples and use cases.&quot;,
+        &quot;projects.md&quot;: &quot;# ML.NET Projects\nDocument your ML.NET projects here.&quot;
+    },
+    &quot;python&quot;: {
+        &quot;intro.md&quot;: &quot;# Python Introduction\nGetting started with Python.&quot;,
+        &quot;venv.md&quot;: &quot;# Python Virtual Environments\nGuide to creating and using venv.&quot;,
+        &quot;projects.md&quot;: &quot;# Python Projects\nDocument your Python projects here.&quot;
+    },
+    &quot;blockchain&quot;: {
+        &quot;intro.md&quot;: &quot;# Blockchain Introduction\nBasics of blockchain technology.&quot;,
+        &quot;basics.md&quot;: &quot;# Blockchain Basics\nCore concepts explained.&quot;,
+        &quot;projects.md&quot;: &quot;# Blockchain Projects\nDocument your blockchain projects here.&quot;
+    }
+}
+
+# Root docs folder
+docs_root = &quot;docs&quot;
+
+# Ensure docs root exists
+os.makedirs(docs_root, exist_ok=True)
+
+# Create About page
+about_path = os.path.join(docs_root, &quot;about.md&quot;)
+if not os.path.exists(about_path):
+    with open(about_path, &quot;w&quot;, encoding=&quot;utf-8&quot;) as f:
+        f.write(&quot;# About\nThis project covers .NET, ML.NET, Python, and Blockchain learning resources.&quot;)
+
+# Create index page
+index_path = os.path.join(docs_root, &quot;index.md&quot;)
+if not os.path.exists(index_path):
+    with open(index_path, &quot;w&quot;, encoding=&quot;utf-8&quot;) as f:
+        f.write(&quot;# Welcome\nThis is the Learning Project documentation site.&quot;)
+
+# Loop through structure and create folders/files
+for folder, files in structure.items():
+    folder_path = os.path.join(docs_root, folder)
+    os.makedirs(folder_path, exist_ok=True)
+    for filename, content in files.items():
+        file_path = os.path.join(folder_path, filename)
+        if not os.path.exists(file_path):
+            with open(file_path, &quot;w&quot;, encoding=&quot;utf-8&quot;) as f:
+                f.write(content)
+
+print(&quot;✅ Documentation structure created successfully!&quot;)
+</code></pre>
+<hr />
+<h3 id="how-to-run">⚙️ How to Run</h3>
+<ol>
+<li>Save the script as <code>create_docs_structure.py</code> in your project root.  </li>
+<li>Run it inside your virtual environment:</li>
+</ol>
+<pre><code class="language-powershell">(.mjenv) PS C:\Dev\learn&gt; python create_docs_structure.py
+</code></pre>
+<ol>
+<li>It will:</li>
+<li>Create all missing folders (<code>dotnet</code>, <code>mlnet</code>, <code>python</code>, <code>blockchain</code>).  </li>
+<li>Add starter <code>.md</code> files with headings and placeholder content.  </li>
+<li>Generate <code>index.md</code> and <code>about.md</code> if missing.  </li>
+</ol>
+<hr />
+<h3 id="result">🎯 Result</h3>
+<p>After running, your <code>docs/</code> folder will look like this:</p>
+<pre><code>docs/
+├── index.md
+├── about.md
+├── dotnet/
+│   ├── intro.md
+│   ├── tutorials.md
+│   └── projects.md
+├── mlnet/
+│   ├── intro.md
+│   ├── examples.md
+│   └── projects.md
+├── python/
+│   ├── intro.md
+│   ├── venv.md
+│   └── projects.md
+└── blockchain/
+    ├── intro.md
+    ├── basics.md
+    └── projects.md
+</code></pre>
+<hr />
+<p>👉 This way, you won’t see any more “file not found” warnings when running <code>mkdocs serve</code>.  </p>
+<p>Would you like me to also extend this script so it <strong>auto-populates each file with a learning roadmap</strong> (like bullet points for topics to cover in .NET, ML.NET, Python, Blockchain), instead of just placeholder text?</p>
+<hr />
+<p>Excellent, Abdul — the script ran perfectly and your docs structure is now in place. That means all those “file not found” warnings are gone, and you’ve got a solid foundation for your Learning Project.</p>
+<hr />
+<h3 id="what-youve-achieved">🔑 What You’ve Achieved</h3>
+<ul>
+<li><strong>MkDocs downgraded to 1.x</strong> → stable environment.  </li>
+<li><strong>Python automation script executed</strong> → created all missing folders and <code>.md</code> files with starter content.  </li>
+<li><strong>Docs tree ready</strong> → matches your <code>mkdocs.yml</code> navigation.  </li>
+</ul>
+<hr />
+<h3 id="next-steps-build-deploy-workflow">📌 Next Steps: Build &amp; Deploy Workflow</h3>
+<p>Here’s the complete workflow you can follow every time you update your docs:</p>
+<h3 id="1-preview-locally">1. Preview Locally</h3>
+<pre><code class="language-powershell">mkdocs serve
+</code></pre>
+<ul>
+<li>Opens at <code>http://127.0.0.1:8000</code>  </li>
+<li>Lets you check formatting, navigation, and content before publishing.</li>
+</ul>
+<hr />
+<h3 id="2-build-static-site">2. Build Static Site</h3>
+<pre><code class="language-powershell">mkdocs build
+</code></pre>
+<ul>
+<li>Generates a <code>site/</code> folder with HTML, CSS, JS.  </li>
+<li>This is the version that gets deployed.</li>
+</ul>
+<hr />
+<h3 id="3-push-to-github">3. Push to GitHub</h3>
+<pre><code class="language-powershell">git add .
+git commit -m &quot;Update docs&quot;
+git push origin main
+</code></pre>
+<hr />
+<h3 id="4-deploy-to-github-pages">4. Deploy to GitHub Pages</h3>
+<pre><code class="language-powershell">mkdocs gh-deploy
+</code></pre>
+<ul>
+<li>Builds the site and pushes it to the <code>gh-pages</code> branch.  </li>
+<li>GitHub Pages will serve it at:<br />
+<code>https://&lt;your-username&gt;.github.io/&lt;repo-name&gt;/</code></li>
+</ul>
+<hr />
+<h3 id="suggested-enhancements">🎯 Suggested Enhancements</h3>
+<ul>
+<li>Add <strong>learning roadmaps</strong> in each section (<code>intro.md</code>, <code>projects.md</code>) with bullet points for topics.  </li>
+<li>Use <strong>Material theme features</strong>:  </li>
+<li>Search bar  </li>
+<li>Code highlighting  </li>
+<li>Tabs and admonitions (<code>!!! note</code>, <code>!!! warning</code>)  </li>
+<li>Add a <strong>README.md</strong> in the repo root to explain the project purpose.</li>
+</ul>
+<hr />
+<p>👉 You now have a <strong>repeatable workflow</strong>: write → preview → commit → deploy.  </p>
+<p>Would you like me to extend your Python script so it <strong>auto-populates each file with a roadmap outline</strong> (like “Topics to Learn in .NET”, “Python Roadmap”, “Blockchain Essentials”), instead of just placeholder text? That way, you’ll have a structured syllabus ready to expand.</p>
+<hr />
+<p>Perfect, Abdul — let’s extend your automation so you can generate a <strong>CLI documentation section</strong> automatically. We’ll create a Python script that builds a new file <code>docs/cli.md</code> and fills it with structured content for Git CLI, Python CLI, .NET CLI, ML.NET CLI, PowerShell, etc.</p>
+<hr />
+<h3 id="python-script-create_cli_docspy">📜 Python Script: <code>create_cli_docs.py</code></h3>
+<p>Save this in your project root and run it. It will generate <code>docs/cli.md</code> with organized headings and starter content.</p>
+<pre><code class="language-python">import os
+
+# Root docs folder
+docs_root = &quot;docs&quot;
+os.makedirs(docs_root, exist_ok=True)
+
+cli_file = os.path.join(docs_root, &quot;cli.md&quot;)
+
+cli_content = &quot;&quot;&quot;# Command Line Interfaces (CLI)
+
+This section documents common CLIs used in development: Git, Python, .NET, ML.NET, and PowerShell.
+
+---
+
+## Git CLI
+### Manual
+Overview of Git commands and usage.
+
+### Release Notes
+Track Git release updates.
+
+### Getting Started
+Basic Git setup and initialization.
+
+### GitHub CLI (gh)
+Work seamlessly with GitHub from the command line.
+
+#### Core Commands
+- gh auth
+- gh browse
+- gh codespace
+- gh gist
+- gh issue
+- gh org
+- gh pr
+- gh project
+- gh release
+- gh repo
+- gh skill
+
+#### GitHub Actions Commands
+- gh cache
+- gh run
+- gh workflow
+
+#### Additional Commands
+- gh agent-task
+- gh alias
+- gh api
+- gh attestation
+- gh completion
+- gh config
+- gh copilot
+- gh extension
+- gh gpg-key
+- gh label
+- gh licenses
+- gh preview
+- gh ruleset
+- gh search
+- gh secret
+- gh ssh-key
+- gh status
+- gh variable
+
+#### Options
+--version : Show gh version
+
+#### Examples
+```bash
+$ gh issue create
+$ gh repo clone cli/cli
+</code></pre>
+<hr />
+<h2 id="python-cli">Python CLI</h2>
+<h3 id="manual">Manual</h3>
+<p>Python interpreter and command-line options.</p>
+<h3 id="common-commands">Common Commands</h3>
+<ul>
+<li>python --version</li>
+<li>python -m venv env</li>
+<li>python -m pip install <package></li>
+<li>python -m unittest</li>
+</ul>
+<hr />
+<h2 id="net-cli">.NET CLI</h2>
+<h3 id="manual_1">Manual</h3>
+<p>.NET Core command-line interface.</p>
+<h3 id="common-commands_1">Common Commands</h3>
+<ul>
+<li>dotnet new</li>
+<li>dotnet build</li>
+<li>dotnet run</li>
+<li>dotnet test</li>
+<li>dotnet publish</li>
+</ul>
+<hr />
+<h2 id="mlnet-cli">ML.NET CLI</h2>
+<h3 id="manual_2">Manual</h3>
+<p>ML.NET Model Builder CLI.</p>
+<h3 id="common-commands_2">Common Commands</h3>
+<ul>
+<li>mlnet auto-train</li>
+<li>mlnet generate-code</li>
+<li>mlnet evaluate</li>
+<li>mlnet predict</li>
+</ul>
+<hr />
+<h2 id="powershell-ps">PowerShell (PS)</h2>
+<h3 id="manual_3">Manual</h3>
+<p>Windows PowerShell and cross-platform PowerShell Core.</p>
+<h3 id="common-commands_3">Common Commands</h3>
+<ul>
+<li>Get-Help</li>
+<li>Get-Process</li>
+<li>Get-Service</li>
+<li>Set-ExecutionPolicy</li>
+<li>Install-Module
+"""</li>
+</ul>
+<h3 id="write-file">Write file</h3>
+<p>with open(cli_file, "w", encoding="utf-8") as f:
+    f.write(cli_content)</p>
+<p>print("✅ CLI documentation created at docs/cli.md")</p>
+<pre><code>
+---
+
+## ⚙️ How to Run
+
+```powershell
+(.mjenv) PS C:\Dev\learn&gt; python create_cli_docs.py
+</code></pre>
+<p>This will generate <code>docs/cli.md</code> with structured sections for Git, Python, .NET, ML.NET, and PowerShell.</p>
+<hr />
+<h3 id="result_1">🎯 Result</h3>
+<p>Your <code>docs/cli.md</code> will look like:</p>
+<pre><code>docs/
+└── cli.md
+</code></pre>
+<p>Containing headings, subsections, and command lists for each CLI.</p>
+<hr />
+<p>👉 Next step: add <code>CLI</code> to your <code>mkdocs.yml</code> navigation:</p>
+<pre><code class="language-yaml">nav:
+  - Home: index.md
+  - CLI: cli.md
+  - .NET: ...
+  - ML.NET: ...
+  - Python: ...
+  - Blockchain: ...
+  - About: about.md
+</code></pre>
+<hr />
+<p>Would you like me to <strong>expand the script further</strong> so each CLI section (Git, Python, .NET, ML.NET, PS) gets its own <strong>subfolder with multiple <code>.md</code> files</strong> (like <code>cli/git.md</code>, <code>cli/python.md</code>, etc.), instead of one big <code>cli.md</code>? That way, you can grow each CLI topic separately.</p>
+<hr />
+<p>Got it, Abdul — let’s automate your <strong>CLI documentation</strong> so you don’t have to manually type out all those commands. We’ll make a Python script that generates a <strong><code>docs/cli/</code> folder</strong> with separate markdown files for each CLI (Git, Python, .NET, ML.NET, PowerShell). This way, you’ll have a clean structure instead of one giant <code>cli.md</code>.</p>
+<hr />
+<h3 id="python-script-create_cli_structurepy">📜 Python Script: <code>create_cli_structure.py</code></h3>
+<p>Save this in your project root and run it. It will create a <code>docs/cli/</code> folder with organized files.</p>
+<pre><code class="language-python">import os
+
+# Root docs folder
+docs_root = &quot;docs&quot;
+cli_root = os.path.join(docs_root, &quot;cli&quot;)
+
+# Ensure CLI folder exists
+os.makedirs(cli_root, exist_ok=True)
+
+# Define CLI sections and starter content
+cli_sections = {
+    &quot;git.md&quot;: &quot;&quot;&quot;# Git CLI
+Git command-line interface for version control.
+
+## Manual
+Basic Git usage and setup.
+
+## Common Commands
+- git init
+- git clone &lt;repo&gt;
+- git status
+- git add .
+- git commit -m &quot;message&quot;
+- git push
+- git pull
+
+## GitHub CLI (gh)
+Work seamlessly with GitHub from the command line.
+
+### Core Commands
+- gh auth
+- gh browse
+- gh codespace
+- gh gist
+- gh issue
+- gh org
+- gh pr
+- gh project
+- gh release
+- gh repo
+- gh skill
+
+### Options
+--version : Show gh version
+
+### Examples
+```bash
+$ gh issue create
+$ gh repo clone cli/cli
+```&quot;&quot;&quot;,
+
+    &quot;python.md&quot;: &quot;&quot;&quot;# Python CLI
+Python interpreter and command-line options.
+
+## Common Commands
+- python --version
+- python -m venv env
+- python -m pip install &lt;package&gt;
+- python -m unittest
+&quot;&quot;&quot;,
+
+    &quot;dotnet.md&quot;: &quot;&quot;&quot;# .NET CLI
+.NET Core command-line interface.
+
+## Common Commands
+- dotnet new
+- dotnet build
+- dotnet run
+- dotnet test
+- dotnet publish
+&quot;&quot;&quot;,
+
+    &quot;mlnet.md&quot;: &quot;&quot;&quot;# ML.NET CLI
+ML.NET Model Builder CLI.
+
+## Common Commands
+- mlnet auto-train
+- mlnet generate-code
+- mlnet evaluate
+- mlnet predict
+&quot;&quot;&quot;,
+
+    &quot;powershell.md&quot;: &quot;&quot;&quot;# PowerShell CLI
+Windows PowerShell and cross-platform PowerShell Core.
+
+## Common Commands
+- Get-Help
+- Get-Process
+- Get-Service
+- Set-ExecutionPolicy
+- Install-Module
+&quot;&quot;&quot;
+}
+
+# Create each CLI file
+for filename, content in cli_sections.items():
+    file_path = os.path.join(cli_root, filename)
+    if not os.path.exists(file_path):
+        with open(file_path, &quot;w&quot;, encoding=&quot;utf-8&quot;) as f:
+            f.write(content)
+
+print(&quot;✅ CLI documentation structure created at docs/cli/&quot;)
+</code></pre>
+<hr />
+<h3 id="how-to-run_1">⚙️ How to Run</h3>
+<pre><code class="language-powershell">(.mjenv) PS C:\Dev\learn&gt; python create_cli_structure.py
+</code></pre>
+<hr />
+<h3 id="resulting-structure">📂 Resulting Structure</h3>
+<pre><code>docs/
+└── cli/
+    ├── git.md
+    ├── python.md
+    ├── dotnet.md
+    ├── mlnet.md
+    └── powershell.md
+</code></pre>
+<hr />
+<h3 id="update-mkdocsyml">🔗 Update mkdocs.yml</h3>
+<p>Add this to your navigation:</p>
+<pre><code class="language-yaml">nav:
+  - Home: index.md
+  - CLI:
+      - Git: cli/git.md
+      - Python: cli/python.md
+      - .NET: cli/dotnet.md
+      - ML.NET: cli/mlnet.md
+      - PowerShell: cli/powershell.md
+  - .NET: ...
+  - ML.NET: ...
+  - Python: ...
+  - Blockchain: ...
+  - About: about.md
+</code></pre>
+<hr />
+<p>👉 This way, each CLI has its own dedicated page, and you can expand them independently as you learn more.  </p>
+<p>Would you like me to also <strong>auto-populate Git CLI with the full command list you pasted</strong> (like <code>gh issue create</code>, <code>gh repo clone</code>, etc.) so it’s all structured into subsections automatically?</p>
+<hr />
+<p>Perfect, Abdul — let’s supercharge your CLI documentation automation. Since you want <strong>all Git CLI commands you pasted</strong> structured into Markdown files, here’s a Python script that will generate a <strong><code>docs/cli/</code> folder</strong> with separate <code>.md</code> files for Git, Python, .NET, ML.NET, and PowerShell. The Git section will be fully populated with the long command list you provided.</p>
+<hr />
+<h3 id="python-script-create_cli_fullpy">📜 Python Script: <code>create_cli_full.py</code></h3>
+<pre><code class="language-python">import os
+
+# Root docs folder
+docs_root = &quot;docs&quot;
+cli_root = os.path.join(docs_root, &quot;cli&quot;)
+
+# Ensure CLI folder exists
+os.makedirs(cli_root, exist_ok=True)
+
+# Git CLI content (expanded with your full command list)
+git_content = &quot;&quot;&quot;# Git CLI
+Git command-line interface for version control.
+
+## Manual
+Basic Git usage and setup.
+
+## Release Notes
+Track Git release updates.
+
+## Getting Started
+Basic Git setup and initialization.
+
+---
+
+## GitHub CLI (gh)
+Work seamlessly with GitHub from the command line.
+
+### Core Commands
+gh auth  
+gh browse  
+gh codespace  
+gh gist  
+gh issue  
+gh org  
+gh pr  
+gh project  
+gh release  
+gh repo  
+gh skill  
+
+### GitHub Actions Commands
+gh cache  
+gh run  
+gh workflow  
+
+### Additional Commands
+gh agent-task  
+gh alias  
+gh api  
+gh attestation  
+gh completion  
+gh config  
+gh copilot  
+gh extension  
+gh gpg-key  
+gh label  
+gh licenses  
+gh preview  
+gh ruleset  
+gh search  
+gh secret  
+gh ssh-key  
+gh status  
+gh variable  
+
+### Options
+--version : Show gh version
+
+### Examples
+```bash
+$ gh issue create
+$ gh repo clone cli/cli
+</code></pre>
+<hr />
+<h3 id="other-git-commands">Other Git Commands</h3>
+<ul>
+<li>git init</li>
+<li>git clone <repo></li>
+<li>git status</li>
+<li>git add .</li>
+<li>git commit -m "message"</li>
+<li>git push</li>
+<li>git pull
+"""</li>
+</ul>
+<h3 id="other-cli-content">Other CLI content</h3>
+<p>python_content = """# Python CLI
+Python interpreter and command-line options.</p>
+<h3 id="common-commands_4">Common Commands</h3>
+<ul>
+<li>python --version</li>
+<li>python -m venv env</li>
+<li>python -m pip install <package></li>
+<li>python -m unittest
+"""</li>
+</ul>
+<p>dotnet_content = """# .NET CLI
+.NET Core command-line interface.</p>
+<h3 id="common-commands_5">Common Commands</h3>
+<ul>
+<li>dotnet new</li>
+<li>dotnet build</li>
+<li>dotnet run</li>
+<li>dotnet test</li>
+<li>dotnet publish
+"""</li>
+</ul>
+<p>mlnet_content = """# ML.NET CLI
+ML.NET Model Builder CLI.</p>
+<h3 id="common-commands_6">Common Commands</h3>
+<ul>
+<li>mlnet auto-train</li>
+<li>mlnet generate-code</li>
+<li>mlnet evaluate</li>
+<li>mlnet predict
+"""</li>
+</ul>
+<p>powershell_content = """# PowerShell CLI
+Windows PowerShell and cross-platform PowerShell Core.</p>
+<h3 id="common-commands_7">Common Commands</h3>
+<ul>
+<li>Get-Help</li>
+<li>Get-Process</li>
+<li>Get-Service</li>
+<li>Set-ExecutionPolicy</li>
+<li>Install-Module
+"""</li>
+</ul>
+<h3 id="write-files">Write files</h3>
+<p>cli_files = {
+    "git.md": git_content,
+    "python.md": python_content,
+    "dotnet.md": dotnet_content,
+    "mlnet.md": mlnet_content,
+    "powershell.md": powershell_content,
+}</p>
+<p>for filename, content in cli_files.items():
+    file_path = os.path.join(cli_root, filename)
+    with open(file_path, "w", encoding="utf-8") as f:
+        f.write(content)</p>
+<p>print("✅ Full CLI documentation created at docs/cli/")</p>
+<pre><code>
+---
+
+## ⚙️ How to Run
+
+```powershell
+(.mjenv) PS C:\Dev\learn&gt; python create_cli_full.py
+</code></pre>
+<hr />
+<h3 id="resulting-structure_1">📂 Resulting Structure</h3>
+<pre><code>docs/
+└── cli/
+    ├── git.md        # Full Git + GitHub CLI commands
+    ├── python.md     # Python CLI basics
+    ├── dotnet.md     # .NET CLI basics
+    ├── mlnet.md      # ML.NET CLI basics
+    └── powershell.md # PowerShell basics
+</code></pre>
+<hr />
+<h3 id="update-mkdocsyml_1">🔗 Update mkdocs.yml</h3>
+<pre><code class="language-yaml">nav:
+  - Home: index.md
+  - CLI:
+      - Git: cli/git.md
+      - Python: cli/python.md
+      - .NET: cli/dotnet.md
+      - ML.NET: cli/mlnet.md
+      - PowerShell: cli/powershell.md
+  - .NET: ...
+  - ML.NET: ...
+  - Python: ...
+  - Blockchain: ...
+  - About: about.md
+</code></pre>
+<hr />
+<p>👉 This gives you a <strong>complete CLI syllabus</strong> with Git fully populated, and placeholders for Python, .NET, ML.NET, and PowerShell that you can expand later.  </p>
+<p>Would you like me to also <strong>auto-generate subfolders</strong> (like <code>cli/git/commands.md</code>, <code>cli/git/examples.md</code>) so each Git topic is split into smaller pages instead of one giant <code>git.md</code>?</p>
+<hr />
+<p>Here’s a <strong>complete <code>mkdocs.yml</code></strong> you can drop straight into your project root. It integrates all your learning sections (.NET, ML.NET, Python, Blockchain), plus the new <strong>CLI documentation</strong> with subpages for Git, Python, .NET, ML.NET, and PowerShell.</p>
+<hr />
+<h3 id="mkdocsyml">📄 mkdocs.yml</h3>
+<pre><code class="language-yaml">site_name: Learning Project
+site_description: Documentation site for learning .NET, ML.NET, Python, Blockchain, and CLI tools
+site_author: Abdul
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+
+nav:
+  - Home: index.md
+  - CLI:
+      - Git: cli/git.md
+      - Python: cli/python.md
+      - .NET: cli/dotnet.md
+      - ML.NET: cli/mlnet.md
+      - PowerShell: cli/powershell.md
+  - .NET:
+      - Introduction: dotnet/intro.md
+      - Tutorials: dotnet/tutorials.md
+      - Projects: dotnet/projects.md
+  - ML.NET:
+      - Introduction: mlnet/intro.md
+      - Examples: mlnet/examples.md
+      - Projects: mlnet/projects.md
+  - Python:
+      - Introduction: python/intro.md
+      - Virtual Environments: python/venv.md
+      - Projects: python/projects.md
+  - Blockchain:
+      - Introduction: blockchain/intro.md
+      - Basics: blockchain/basics.md
+      - Projects: blockchain/projects.md
+  - About: about.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.tilde
+</code></pre>
+<hr />
+<h3 id="what-this-gives-you">✅ What This Gives You</h3>
+<ul>
+<li><strong>Material theme</strong> with advanced features (tabs, search, copy code buttons).  </li>
+<li><strong>Navigation tree</strong> with all your learning topics and CLI subpages.  </li>
+<li><strong>Markdown extensions</strong> for rich formatting (admonitions, tabs, task lists, syntax highlighting).  </li>
+</ul>
+<hr />
+<h3 id="next-steps_1">🚀 Next Steps</h3>
+<ol>
+<li>Save this as <code>mkdocs.yml</code> in your project root.  </li>
+<li>Run locally to preview:</li>
+</ol>
+<pre><code class="language-powershell">mkdocs serve
+</code></pre>
+<ol>
+<li>Deploy to GitHub Pages:</li>
+</ol>
+<pre><code class="language-powershell">mkdocs gh-deploy
+</code></pre>
+<hr />
+<p>👉 This setup makes your documentation modular and scalable. Each CLI has its own page, and your learning topics are neatly grouped.  </p>
+<p>Would you like me to also <strong>add a “Projects” section under CLI</strong> (e.g., “Git CLI Projects”, “Python CLI Projects”) so you can document hands-on exercises for each tool?</p>
+<hr />
+<h3 id="updated-mkdocsyml">Updated mkdocs.yml</h3>
+<pre><code class="language-yaml">site_name: Learning Project
+site_description: Documentation site for learning .NET, ML.NET, Python, Blockchain, and CLI tools
+site_author: Abdul
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+
+nav:
+  - Home: index.md
+  - CLI:
+      - Git: cli/git.md
+      - Python: cli/python.md
+      - .NET: cli/dotnet.md
+      - ML.NET: cli/mlnet.md
+      - PowerShell: cli/powershell.md
+  - .NET:
+      - Introduction: dotnet/intro.md
+      - Tutorials: dotnet/tutorials.md
+      - Projects: dotnet/projects.md
+  - ML.NET:
+      - Introduction: mlnet/intro.md
+      - Examples: mlnet/examples.md
+      - Projects: mlnet/projects.md
+  - Python:
+      - Introduction: python/intro.md
+      - Virtual Environments: python/venv.md
+      - Projects: python/projects.md
+  - Blockchain:
+      - Introduction: blockchain/intro.md
+      - Basics: blockchain/basics.md
+      - Projects: blockchain/projects.md
+  - PowerShell:
+      - Introduction: powershell/intro.md
+      - Basics: powershell/basics.md
+      - Projects: powershell/projects.md
+  - About: about.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.tilde
+</code></pre>
+<hr />
+<h3 id="create-the-powershell-pages-quick-commands">Create the PowerShell pages (quick commands)</h3>
+<p><strong>PowerShell: create files if missing</strong></p>
+<pre><code class="language-powershell">mkdir docs\powershell -ErrorAction SilentlyContinue
+ni docs\powershell\intro.md -Force
+ni docs\powershell\basics.md -Force
+ni docs\powershell\projects.md -Force
+
+# Optional: add starter content
+Set-Content docs\powershell\intro.md &quot;# PowerShell Introduction`nOverview of PowerShell and cross-platform usage.&quot;
+Set-Content docs\powershell\basics.md &quot;# PowerShell Basics`nCommon cmdlets and usage examples.&quot;
+Set-Content docs\powershell\projects.md &quot;# PowerShell Projects`nHands-on exercises and scripts.&quot;
+</code></pre>
+<p>Run <code>mkdocs serve</code> to verify there are no nav warnings and preview the site.</p>
+<hr />
+<h3 id="github-cli-gh-repo-documentation">GitHub CLI <code>gh repo</code> documentation:</h3>
+<pre><code class="language-markdown"># GitHub CLI: `gh repo`
+
+The `gh repo` command in GitHub CLI allows you to manage repositories directly from the command line.  
+It includes subcommands for creating, cloning, viewing, forking, and deleting repositories.
+
+---
+
+## 📥 Clone a Repository
+```bash
+gh repo clone owner/repository-name
+</code></pre>
+<p>This will clone the specified repository into your current directory.</p>
+<hr />
+<h3 id="create-a-repository">🆕 Create a Repository</h3>
+<pre><code class="language-bash">gh repo create my-repo --public --clone
+</code></pre>
+<p>Creates a new public repository named <code>my-repo</code> and immediately clones it locally.</p>
+<hr />
+<h3 id="view-repository-details">🔎 View Repository Details</h3>
+<pre><code class="language-bash">gh repo view owner/repository-name --web
+</code></pre>
+<p>Opens the repository details in your web browser.</p>
+<hr />
+<h3 id="fork-a-repository">🍴 Fork a Repository</h3>
+<pre><code class="language-bash">gh repo fork owner/repository-name --clone
+</code></pre>
+<p>Forks the repository and clones the fork locally.</p>
+<hr />
+<h3 id="delete-a-repository">🗑️ Delete a Repository</h3>
+<pre><code class="language-bash">gh repo delete owner/repository-name --confirm
+</code></pre>
+<p>Deletes the specified repository.<br />
+⚠️ <strong>Be cautious</strong>: this action is destructive and cannot be undone.</p>
+<hr />
+<h3 id="key-considerations">💡 Key Considerations</h3>
+<ul>
+<li>Use <code>--help</code> with any subcommand for detailed options (e.g., <code>gh repo create --help</code>).</li>
+<li>Ensure you are authenticated with GitHub CLI (<code>gh auth login</code>) before using these commands.</li>
+<li>Be careful with destructive actions like <code>delete</code>.</li>
+</ul>
+<hr />
+<h2 id="learn-more">📚 Learn More</h2>
+<ul>
+<li><a href="https://cli.github.com">GitHub CLI Documentation</a></li>
+<li><a href="https://cli.github.com/manual/gh_repo">GitHub CLI Repo Management</a>
+```</li>
+</ul>
+<hr />
+<p>This version is clean, structured, and MKDocs-ready:
+- Uses headings and sections for clarity.
+- Includes fenced code blocks for commands.
+- Adds icons/emojis for quick scanning.
+- Provides official documentation links at the end.</p>
+<p>Would you like me to also create a <strong>Mermaid diagram</strong> showing the lifecycle of <code>gh repo</code> commands (create → clone → view → fork → delete) to visually complement this page?</p>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
