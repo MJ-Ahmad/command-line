@@ -679,6 +679,91 @@ Python interpreter and command-line options.
 - python -m pip install <package>
 - python -m unittest
 
+Here’s a clean **Markdown (.md)** formatted version of your Python Localhost Command guide. I’ve structured it with headings, code blocks, and notes so it’s ready to drop into your documentation:
+
+```markdown
+# Python Localhost Command Guide
+
+You can quickly start a local HTTP server in Python using its built-in `http.server` module — perfect for testing, development, or sharing files on your local network.
+
+---
+
+## 1. Start a Server on Localhost (Port 8000)
+
+```bash
+python -m http.server
+```
+
+This serves files from the current directory at [http://localhost:8000](http://localhost:8000) and is accessible from other devices on the same network unless restricted.
+
+---
+
+## 2. Custom Port
+
+```bash
+python -m http.server 9000
+```
+
+Runs the server on port **9000**, accessible at [http://localhost:9000](http://localhost:9000).
+
+---
+
+## 3. Serve a Specific Directory
+
+```bash
+python -m http.server --directory /path/to/dir
+```
+
+Serves files from `/path/to/dir` instead of the current working directory.
+
+---
+
+## 4. Restrict Access to Local Machine Only
+
+```bash
+python -m http.server -b 127.0.0.1 8080
+```
+
+Binds the server to **localhost** on port **8080**, blocking external access.
+
+---
+
+## 5. Programmatic Usage in Python
+
+```python
+import http.server
+import socketserver
+
+PORT = 8000
+Handler = http.server.SimpleHTTPRequestHandler
+
+with socketserver.TCPServer(("", PORT), Handler) as httpd:
+    print(f"Serving at port {PORT}")
+    httpd.serve_forever()
+```
+
+This snippet creates a simple HTTP server serving the current directory.
+
+---
+
+## 🔑 Key Notes
+
+- Default port is **8000**; specify another if it’s in use.
+- Use **Ctrl + C** to stop the server.
+- For **HTTPS**, you must wrap the socket with SSL manually — `http.server` doesn’t support it out-of-the-box.
+- ⚠️ **Security Warning:** `http.server` is for development/testing only; it lacks production-grade security.
+
+---
+
+## ✅ Why Use This?
+
+This command is a quick, zero-dependency way to serve files locally without installing extra tools.
+```
+
+This format is modular, beginner-friendly, and ready for your MkDocs or GitHub README.  
+
+👉 Do you want me to also add **Bengali translations for each section heading and notes** so your documentation is bilingual, like your other projects?
+
 ---
 
 ## .NET CLI
