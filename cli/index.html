@@ -113,15 +113,31 @@
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#net-cli" class="nav-link">.NET CLI</a>
+            <li class="nav-item" data-bs-level="2"><a href="#2-custom-port" class="nav-link">2. Custom Port</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#mlnet-cli" class="nav-link">ML.NET CLI</a>
+            <li class="nav-item" data-bs-level="2"><a href="#3-serve-a-specific-directory" class="nav-link">3. Serve a Specific Directory</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#powershell-ps" class="nav-link">PowerShell (PS)</a>
+            <li class="nav-item" data-bs-level="2"><a href="#4-restrict-access-to-local-machine-only" class="nav-link">4. Restrict Access to Local Machine Only</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#5-programmatic-usage-in-python" class="nav-link">5. Programmatic Usage in Python</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#key-notes" class="nav-link">🔑 Key Notes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#why-use-this" class="nav-link">✅ Why Use This?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#how-to-run_1" class="nav-link">⚙️ How to Run</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -721,53 +737,111 @@ $ gh repo clone cli/cli
 <li>python -m pip install <package></li>
 <li>python -m unittest</li>
 </ul>
-<hr />
-<h2 id="net-cli">.NET CLI</h2>
-<h3 id="manual_1">Manual</h3>
-<p>.NET Core command-line interface.</p>
-<h3 id="common-commands_1">Common Commands</h3>
-<ul>
-<li>dotnet new</li>
-<li>dotnet build</li>
-<li>dotnet run</li>
-<li>dotnet test</li>
-<li>dotnet publish</li>
-</ul>
-<hr />
-<h2 id="mlnet-cli">ML.NET CLI</h2>
-<h3 id="manual_2">Manual</h3>
-<p>ML.NET Model Builder CLI.</p>
-<h3 id="common-commands_2">Common Commands</h3>
-<ul>
-<li>mlnet auto-train</li>
-<li>mlnet generate-code</li>
-<li>mlnet evaluate</li>
-<li>mlnet predict</li>
-</ul>
-<hr />
-<h2 id="powershell-ps">PowerShell (PS)</h2>
-<h3 id="manual_3">Manual</h3>
-<p>Windows PowerShell and cross-platform PowerShell Core.</p>
-<h3 id="common-commands_3">Common Commands</h3>
-<ul>
-<li>Get-Help</li>
-<li>Get-Process</li>
-<li>Get-Service</li>
-<li>Set-ExecutionPolicy</li>
-<li>Install-Module
-"""</li>
-</ul>
-<h3 id="write-file">Write file</h3>
-<p>with open(cli_file, "w", encoding="utf-8") as f:
-    f.write(cli_content)</p>
-<p>print("✅ CLI documentation created at docs/cli.md")</p>
-<pre><code>
+<p>Here’s a clean <strong>Markdown (.md)</strong> formatted version of your Python Localhost Command guide. I’ve structured it with headings, code blocks, and notes so it’s ready to drop into your documentation:</p>
+<pre><code class="language-markdown"># Python Localhost Command Guide
+
+You can quickly start a local HTTP server in Python using its built-in `http.server` module — perfect for testing, development, or sharing files on your local network.
+
 ---
 
-## ⚙️ How to Run
+## 1. Start a Server on Localhost (Port 8000)
 
-```powershell
-(.mjenv) PS C:\Dev\learn&gt; python create_cli_docs.py
+```bash
+python -m http.server
+</code></pre>
+<p>This serves files from the current directory at <a href="http://localhost:8000">http://localhost:8000</a> and is accessible from other devices on the same network unless restricted.</p>
+<hr />
+<h2 id="2-custom-port">2. Custom Port</h2>
+<pre><code class="language-bash">python -m http.server 9000
+</code></pre>
+<p>Runs the server on port <strong>9000</strong>, accessible at <a href="http://localhost:9000">http://localhost:9000</a>.</p>
+<hr />
+<h2 id="3-serve-a-specific-directory">3. Serve a Specific Directory</h2>
+<pre><code class="language-bash">python -m http.server --directory /path/to/dir
+</code></pre>
+<p>Serves files from <code>/path/to/dir</code> instead of the current working directory.</p>
+<hr />
+<h2 id="4-restrict-access-to-local-machine-only">4. Restrict Access to Local Machine Only</h2>
+<pre><code class="language-bash">python -m http.server -b 127.0.0.1 8080
+</code></pre>
+<p>Binds the server to <strong>localhost</strong> on port <strong>8080</strong>, blocking external access.</p>
+<hr />
+<h2 id="5-programmatic-usage-in-python">5. Programmatic Usage in Python</h2>
+<pre><code class="language-python">import http.server
+import socketserver
+
+PORT = 8000
+Handler = http.server.SimpleHTTPRequestHandler
+
+with socketserver.TCPServer((&quot;&quot;, PORT), Handler) as httpd:
+    print(f&quot;Serving at port {PORT}&quot;)
+    httpd.serve_forever()
+</code></pre>
+<p>This snippet creates a simple HTTP server serving the current directory.</p>
+<hr />
+<h2 id="key-notes">🔑 Key Notes</h2>
+<ul>
+<li>Default port is <strong>8000</strong>; specify another if it’s in use.</li>
+<li>Use <strong>Ctrl + C</strong> to stop the server.</li>
+<li>For <strong>HTTPS</strong>, you must wrap the socket with SSL manually — <code>http.server</code> doesn’t support it out-of-the-box.</li>
+<li>⚠️ <strong>Security Warning:</strong> <code>http.server</code> is for development/testing only; it lacks production-grade security.</li>
+</ul>
+<hr />
+<h2 id="why-use-this">✅ Why Use This?</h2>
+<p>This command is a quick, zero-dependency way to serve files locally without installing extra tools.</p>
+<pre><code>
+This format is modular, beginner-friendly, and ready for your MkDocs or GitHub README.  
+
+👉 Do you want me to also add **Bengali translations for each section heading and notes** so your documentation is bilingual, like your other projects?
+
+---
+
+## .NET CLI
+### Manual
+.NET Core command-line interface.
+
+### Common Commands
+- dotnet new
+- dotnet build
+- dotnet run
+- dotnet test
+- dotnet publish
+
+---
+
+## ML.NET CLI
+### Manual
+ML.NET Model Builder CLI.
+
+### Common Commands
+- mlnet auto-train
+- mlnet generate-code
+- mlnet evaluate
+- mlnet predict
+
+---
+
+## PowerShell (PS)
+### Manual
+Windows PowerShell and cross-platform PowerShell Core.
+
+### Common Commands
+- Get-Help
+- Get-Process
+- Get-Service
+- Set-ExecutionPolicy
+- Install-Module
+&quot;&quot;&quot;
+
+### Write file
+with open(cli_file, &quot;w&quot;, encoding=&quot;utf-8&quot;) as f:
+    f.write(cli_content)
+
+print(&quot;✅ CLI documentation created at docs/cli.md&quot;)
+</code></pre>
+<hr />
+<h2 id="how-to-run_1">⚙️ How to Run</h2>
+<pre><code class="language-powershell">(.mjenv) PS C:\Dev\learn&gt; python create_cli_docs.py
 </code></pre>
 <p>This will generate <code>docs/cli.md</code> with structured sections for Git, Python, .NET, ML.NET, and PowerShell.</p>
 <hr />
@@ -899,7 +973,7 @@ for filename, content in cli_sections.items():
 print(&quot;✅ CLI documentation structure created at docs/cli/&quot;)
 </code></pre>
 <hr />
-<h3 id="how-to-run_1">⚙️ How to Run</h3>
+<h3 id="how-to-run_2">⚙️ How to Run</h3>
 <pre><code class="language-powershell">(.mjenv) PS C:\Dev\learn&gt; python create_cli_structure.py
 </code></pre>
 <hr />
@@ -1024,7 +1098,7 @@ $ gh repo clone cli/cli
 <h3 id="other-cli-content">Other CLI content</h3>
 <p>python_content = """# Python CLI
 Python interpreter and command-line options.</p>
-<h3 id="common-commands_4">Common Commands</h3>
+<h3 id="common-commands_1">Common Commands</h3>
 <ul>
 <li>python --version</li>
 <li>python -m venv env</li>
@@ -1034,7 +1108,7 @@ Python interpreter and command-line options.</p>
 </ul>
 <p>dotnet_content = """# .NET CLI
 .NET Core command-line interface.</p>
-<h3 id="common-commands_5">Common Commands</h3>
+<h3 id="common-commands_2">Common Commands</h3>
 <ul>
 <li>dotnet new</li>
 <li>dotnet build</li>
@@ -1045,7 +1119,7 @@ Python interpreter and command-line options.</p>
 </ul>
 <p>mlnet_content = """# ML.NET CLI
 ML.NET Model Builder CLI.</p>
-<h3 id="common-commands_6">Common Commands</h3>
+<h3 id="common-commands_3">Common Commands</h3>
 <ul>
 <li>mlnet auto-train</li>
 <li>mlnet generate-code</li>
@@ -1055,7 +1129,7 @@ ML.NET Model Builder CLI.</p>
 </ul>
 <p>powershell_content = """# PowerShell CLI
 Windows PowerShell and cross-platform PowerShell Core.</p>
-<h3 id="common-commands_7">Common Commands</h3>
+<h3 id="common-commands_4">Common Commands</h3>
 <ul>
 <li>Get-Help</li>
 <li>Get-Process</li>
