@@ -1,0 +1,10 @@
+site_name: MJ Command
+
+nav:
+  - Home: index.md
+  - gh:
+      - Git: gh/index.md
+      - Git commands: gh/commands.md
+      - Cheat Sheet: gh/cheatsheet.md
+  - CLI:
+      - MJ Command: cli/index.md
